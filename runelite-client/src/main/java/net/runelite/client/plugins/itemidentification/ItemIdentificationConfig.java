@@ -325,4 +325,15 @@ public interface ItemIdentificationConfig extends Config
 	{
 		return false;
 	}
+
+	@ConfigItem(
+			keyName = "showSkillCapes",
+			name = "Skill Capes",
+			description = "Show skill cape names",
+			section = identificationSection
+	)
+	default boolean showSkillCapes()
+	{
+		return false;
+	}
 }
